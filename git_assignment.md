@@ -10,11 +10,11 @@ In this assignment, simply edit the homework file itself to answer the questions
 Your commits should always be clear, concise explanations of what is being committed. They should be granular and easy to review.  
 
 ## Tasks  
+Tasks are listed below.  
 
 ### Github set up  
 - Log in to github.com  
-- Visit:  
-```https://github.com/debugacademy/debugacademy-git```  
+- Visit:  ```https://github.com/debugacademy/debugacademy-git```  
 - Press 'Fork' in the upper right corner of the page  
 - You have just created a copy of this repository on your github account!  
 
