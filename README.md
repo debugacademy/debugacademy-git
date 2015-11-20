@@ -169,3 +169,13 @@ Below is a subset of the Debug Academy lesson on git commands. It covers the com
   - It is your job to review what git has added to the files, then to remove what you do not want. Such as '<<<' and '>>>'.  
   - After resolving the conflict, it is your job to add and commit your changes.  
   - Following git workflows such as 'git flow' minimize messy merge conflicts.  
+
+## Good to know  
+### Help! My command line is stuck.  
+Sometimes, especially after a git merge or git commit, people find themselves seeing a bunch of text but being unable to type. If this happened to you, you likely are seeing the text editor 'vim'.  
+
+vim is a popular, advanced command line editor.  
+- To enable typing, press ```i``` for 'Insert'  
+- To save the file, press 'escape', then ```:```, then ```w``` (for write), then ```ENTER```  
+- To exit a file and leave vim,  press 'escape', then ```:```, then ```q``` (for quit), then ```ENTER```  
+  - You may need to press ```y``` if you have unsaved changed  
