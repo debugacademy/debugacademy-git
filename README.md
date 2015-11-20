@@ -156,3 +156,16 @@ Below is a subset of the Debug Academy lesson on git commands. It covers the com
 - For example, if I want to pull from debugacademy's 'master' branch into my 'branch2' branch  
     - git checkout branch2  
     - git pull debugacademy master  
+
+#### git merge [branch name]:  
+- Merges work from [branch name] into the branch you currently have checked out.  
+- For example, if I have branch2 and branch4 in my local repository and I want to bring the changes from branch4 into branch2  
+  - git checkout branch2  
+  - git merge branch4  
+- If it says 'merge conflict', that means the two branches make changes to the same section of the same file  
+  - Git will insert the changes from BOTH branches in the file  
+  - Git will insert '<<<' within the file(s), before each conflict  
+  - Git will insert '>>>' within the file(s), after each conflict  
+  - It is your job to review what git has added to the files, then to remove what you do not want. Such as '<<<' and '>>>'.  
+  - After resolving the conflict, it is your job to add and commit your changes.  
+  - Following git workflows such as 'git flow' minimize messy merge conflicts.  
