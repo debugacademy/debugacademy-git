@@ -70,19 +70,19 @@ Let's try it out. You committed your name above, let's see if it really is only 
 - Switch to the master branch. ```git checkout master```  
 - Reload the file and look for the change you made  
 
-What happened to it?  
+What happened to it?  The change isn't on this file.
 
 ### Create another branch based off of master  
 Name this branch git-02-[your initials]  
 You've done this before! Look at the earlier notes to see how it's done.  
 
 ### Commit to the latest branch  
-On your newest branch, write the company you are representing, if any: [right here]  
+On your newest branch, write the company you are representing, if any: Kardinal  
 
 Also, (optionally) check the appropriate boxes as they apply to you or the company you represent:  
-[ ] Interested in hearing about upcoming Debug Academy classes  
+[x] Interested in hearing about upcoming Debug Academy classes  
 [ ] Interested in hiring Drupal developers  
-[ ] Interested in discussing something else with Debug Academy  
+[x] Interested in discussing something else with Debug Academy  
 
 Wonderful - more edits have been made, but this time on a different branch (version of the repository.) Stage and commit your changes, as you have done before.  
 
