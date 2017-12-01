@@ -56,7 +56,7 @@ Simply run the ```git branch``` command and confirm you are where you expect to 
 ### Make your first commit  
 Git is great for keeping the history of all edits on files. Let's try it out by editing the file you're reading right now!  
 
-Fill in your name after this colon: [right here]  
+Fill in your name after this colon: Sarah
 
 You're not done quite yet - git did not save our changes to the history. Changes saved to the git history must be deliberate and explicit; git does not save every edit you do to the history automatically. Imagine how long the list would be if it did!  
 
@@ -84,7 +84,7 @@ You've done this before! Look at the earlier notes to see how it's done.
 
 ### Commit to the latest branch  
 On your newest branch, write the company you are representing, if any: [right here]  
-
+Pizza, I want pizza please
 Also, (optionally) check the appropriate boxes as they apply to you or the company you represent:  
 [ ] Interested in hearing about upcoming Debug Academy classes  
 [ ] Interested in hiring Drupal developers  
