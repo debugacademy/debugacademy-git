@@ -1,0 +1,24 @@
+Did you have any issues downloading any of the following?  Please let us know before we go any farther.
+
+Xcode (Mac users only)
+Please download this from the Mac App Store. There is a program on your computer named 'App store' which you use to download Xcode.
+
+Git bash (Windows users only) (https://git-for-windows.github.io/)
+
+Sublime Text 3 https://www.sublimetext.com/3. Sublime Text is a sophisticated text editor for code and allows you to open, edit, and save code files.
+
+Also, please go to https://github.com/ and create an account if you do not have one yet.
+
+1 - Using terminal/gitbash, create a folder named gitpractice on your machine's desktop. This can be done by navigating to your desktop, then using the mkdir command:
+cd ~/Desktop
+mkdir gitpractice
+cd gitpractice
+pwd
+ls -la
+mkdir commands
+ls -la
+cd ..
+pwd
+How can we get into the folder “commands” within our gitpractice folder from here?
+
+2 - If you do not have git on your computer please install it following the directions at the top of this page:  https://github.com/s-gorman/debugacademy-git
