@@ -123,7 +123,17 @@ In this example, our colleague has added a commit to another branch named git-02
   - Run: `git checkout QUESTION_1_BRANCH_NAME`  
 - Merge (combine) the changes from origin's git-02-aa branch into your current branch:  
   - Run: ```git merge origin/git-02-aa```  
-- Review this file - The edits you made to your branch and the edits should automatically be combined!  
+  - You should see a 'merge conflict' error message. Return to editing this file.  
+
+- Review this file - The edits you made to your branch and the edits were automatically combined!  
+  - Notice the `<<<`, `===`, and `>>>`  
+  - These are merge conflict indicators  
+  - They let you know what section of the file needs manually updated, if any  
+
+- You may remove the merge conflict indicators then save the file.  
+  - Then, git add and commit the merge:
+    - `git add git_assignment.md`  
+    - `git commit -m 'Merged branch git-02-aa'`   
 
 ### Communicating with remotes  
 You've made updates to your local, now you want to share them with teammates. This is where 'remotes' come in.  
