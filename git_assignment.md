@@ -1,8 +1,8 @@
-# Intro to Git  
+# Intro to Command Line & Git  
 In this assignment, we will learn git by using it.  
 
 ## Answering questions  
-In this assignment, simply edit the homework file itself to answer the questions on it. Your answers will be submitted as a pull request on github  
+In this assignment, simply edit this homework file itself to answer the questions on it. You will be walked through everything during the assignment.  
 
 **You CAN use lessons provided by the class as well as google to answer the questions, but all answers must be in your own words**  
 
@@ -12,9 +12,31 @@ Your commits should always be clear, concise explanations of what is being commi
 ## Tasks  
 Tasks are listed below.  
 
+### Install Git  
+#### Mac OS X  
+- Open the command line  
+  - This is the program named "Terminal"  
+  - Unsure where to find it? Try Mac's spotlight search tool. Press:  
+    - `command` + `space`  
+    - Type: `Terminal`  
+    - Press the `Enter` key  
+- Run: ```git --version```  
+  - If it displays a version number, git is already installed. You can skip to "Initial Git Configuration".  
+  - If you receive an error or warning, git is not yet installed. Continue reading.  
+
+Downloading *Xcode* via the program on your computer named 'App store' is ideal, but it is *very* large download. If you have not already downloaded Xcode before class, try this git alternative: https://git-scm.com/download/mac  
+
+#### Windows  
+Use Git for Windows ( ```https://git-for-windows.github.io/``` ) (command line).  
+
+#### Ubuntu  
+Use the command ```sudo apt-get install git-core``` to install Git using the command line.  
+
+Follow the installation options that will be presented to you.  
+
 ### Github set up  
 - Log in to github.com  
-  - If you have not already done so, you will need to create an account on github.com first  
+  - *You need to create an account on github.com first*  
 - Visit:  ```https://github.com/debugacademy/debugacademy-git```  
 - Press 'Fork' in the upper right corner of the page  
 - You have just created a copy of this repository on your github account!  
@@ -38,7 +60,7 @@ This will create a copy of this repository on your computer, in a folder named d
 Wonderful! You now have cloned this repository twice. Once in your github.com account by clicking 'Fork', and once to your local computer using the git clone command. Let's proceed.  
 
 ### Create and switch to a new branch  
-A branch is a version of your repository. We don't want to edit the 'master' branch - by convention, that version of your repository should continue to match that of Debug Academy's repository.  
+A branch is a version of your repository. By convention, we don't want to edit the 'master' branch, that version of your repository should continue to match that of Debug Academy's repository.  
 
 - Create a new branch based off of the master branch  
   - ```git checkout -b [new-branch] [base-branch]```  
@@ -58,10 +80,18 @@ Git is great for keeping the history of all edits on files. Let's try it out by 
 
 Fill in your name after this colon: [right here]  
 
+Optionally, write the company you are representing, if any: [right here]  
+
+Check the appropriate boxes as they apply to you or the company you represent:  
+[ ] Interested in hearing about upcoming Debug Academy classes  
+[ ] Interested in hiring Drupal developers  
+[ ] Interested in discussing something else with Debug Academy  
+[ ] None of the above  
+
 You're not done quite yet - git did not save our changes to the history. Changes saved to the git history must be deliberate and explicit; git does not save every edit you do to the history automatically. Imagine how long the list would be if it did!  
 
 Tell git you want this edit included in the next commit using git add:  
-- ```git add [filename]```    
+- ```git add git_assignment.md```    
 
 Now, create your first commit, saving the change to your repository's history!  
 - ```git commit -m '[my commit message]'```  
@@ -78,31 +108,22 @@ Let's try it out. You committed your name above, let's see if it really is only 
 
 What happened to it?  
 
-### Create another branch based off of master  
-Name this branch git-02-[your initials]  
-You've done this before! Look at the earlier notes to see how it's done.  
-
-### Commit to the latest branch  
-On your newest branch, write the company you are representing, if any: [right here]  
-
-Also, (optionally) check the appropriate boxes as they apply to you or the company you represent:  
-[ ] Interested in hearing about upcoming Debug Academy classes  
-[ ] Interested in hiring Drupal developers  
-[ ] Interested in discussing something else with Debug Academy  
-[ ] None of the above  
-
-Wonderful - more edits have been made, but this time on a different branch (version of the repository.) Stage (see the above git add command) and commit (see the above git commit command) your changes, as you have done before.  
-
-Now, switch between ( `git checkout BRANCHNAME` ) your branches and refresh this file to confirm that the edits you've made are saved to only their branches.  
-
 ### Merging work  
-We've edited this very file on one branch, and then we've edited it once again on a different branch. What if we want to combine our work from the two branches?  
+We've edited this very file on one branch. What if a coworker edited the same file on their computer, and we want to combine our work?  
+
+In this example, our colleague has added a commit to another branch named git-02-aa and pushed (sent) it to the official Debug Academy repository. We are going to combine their branch with our branch.  
+
+- Download all branches from all repositories.  
+  - `git fetch --all`
+  - This downloads hidden copies of all branches from all associated remotes.  
+
+- The other branch is named `git-02-aa`, and it is stored on the remote nicknamed `origin`, by default.  
 
 - Switch to your question 1 branch you would like to be combined:  
   - Run: `git checkout QUESTION_1_BRANCH_NAME`  
-- Merge (combine) the changes from your question 2 branch:  
-  - Run: ```git merge [other branch]```  
-- Review this file - The edits you've made to your two branches should automatically be combined!  
+- Merge (combine) the changes from origin's git-02-aa branch into your current branch:  
+  - Run: ```git merge origin/git-02-aa```  
+- Review this file - The edits you made to your branch and the edits should automatically be combined!  
 
 ### Communicating with remotes  
 You've made updates to your local, now you want to share them with teammates. This is where 'remotes' come in.  
@@ -111,15 +132,16 @@ Adding a remote is like adding an entry to your phone book. Instead of adding a 
 
 Go to your github account, and click on the debugacademy-git repository which you forked.  
 - Copy the ```HTTPS clone URL``` on the right of the page  
-- Run the command: ```git remote add [nickname] [copied URL]```  
+- Run the command: ```git remote add me [copied URL]```  
   - This command will add an entry in your 'phonebook', or list of remotes, with your github account's repository.  
+  - This command uses `me` as the account nickname. Just like contacts in a phonebook, you could use a different nickname.  
 
 Run ```git remote -v``` to see a list of all entries your repository has in its 'phone book'. Confirm that your github repository is listed.  
 
 ### Push work to your repository  
 Let us now push one of the branches we have been working on to our Github accounts. After all, a primary point of git is to be able to collaborate.  
 
-```git push [remote's nickname] [branch you would like to push]```  
+```git push me [question 1's branch name]```  
 
 Using the remote ('contact') entry from the previous task, git will send the specified branch to the remote which has the specified nickname in your contacts list.  
 
