@@ -78,6 +78,7 @@ Simply run the ```git branch``` command and confirm you are where you expect to 
 ### Make your first commit  
 Git is great for keeping the history of all edits on files. Let's try it out by editing the file you're reading right now!  
 
+
 Fill in your name after this colon: Monica Puerto
 
 Optionally, write the company you are representing, if any: Upside Travel 
