@@ -86,7 +86,7 @@ Check the appropriate boxes as they apply to you or the company you represent:
 [ ] Interested in hearing about upcoming Debug Academy classes  
 [ ] Interested in hiring Drupal developers  
 [ ] Interested in discussing something else with Debug Academy  
-[ ] None of the above  
+[x] None of the above  
 
 You're not done quite yet - git did not save our changes to the history. Changes saved to the git history must be deliberate and explicit; git does not save every edit you do to the history automatically. Imagine how long the list would be if it did!  
 
