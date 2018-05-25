@@ -8,7 +8,7 @@ We will play a game similar to "Mad Libs" using Git. In this game, each player w
 ## Initially  
 
 ## Planning  
-
+ [enter an activity here].  
 ## Action  
 
 ## Outcome  
