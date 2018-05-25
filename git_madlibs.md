@@ -4,6 +4,7 @@ We will play a game similar to "Mad Libs" using Git. In this game, each player w
 **Only fill in ONE section below; the rest will be filled in by other team players.**  
 
 ## Introduction  
+ [enter an objective here].  
 
 ## Initially  
 
