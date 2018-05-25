@@ -12,5 +12,6 @@ We will play a game similar to "Mad Libs" using Git. In this game, each player w
 ## Action  
 
 ## Outcome  
+ [enter a hobby or occupation]. 
 
 ## Conclusion
