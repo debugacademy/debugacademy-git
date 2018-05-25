@@ -1,7 +1,7 @@
-# 'Mad Libs' with Git
-Mad Libs is a word game where players substitute for blanks in a story, before reading the – often comical or nonsensical – story aloud.  
+# 'Story-merge' with Git
+We will play a game similar to "Mad Libs" using Git. In this game, each player will complete **only ONE** sentence below before committing and pushing their work. Creative and/or silly responses are welcome.  
 
-Here, we will use Git to facilitate a game of Mad Libs!  
+**Only fill in ONE section below; the rest will be filled in by other team players.**  
 
 ## Introduction  
 This is a story about how Sarah [complete the sentence].  
