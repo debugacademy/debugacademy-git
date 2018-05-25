@@ -9,7 +9,12 @@ A practice assignment can be found in the repository under the name: git_assignm
 
 ## Git Installation  
 ### Mac OS X  
+#### Mac Option 1 (Recommended)
 Download Xcode from the Mac App Store. There is a program on your computer named 'App store' which you use to download Xcode.  
+
+#### Mac Option 2 (If harddrive space is limited)
+If you do not want to download Xcode due to its large file size, try this instead:  
+https://git-scm.com/download/mac
 
 ### Windows  
 Use Git for Windows ( ```https://git-for-windows.github.io/``` ) (command line).  
