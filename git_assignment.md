@@ -78,15 +78,15 @@ Simply run the ```git branch``` command and confirm you are where you expect to 
 ### Make your first commit  
 Git is great for keeping the history of all edits on files. Let's try it out by editing the file you're reading right now!  
 
-Fill in your name after this colon: [right here]  
+Fill in your name after this colon: Shijit Dasgupta
 
-Optionally, write the company you are representing, if any: [right here]  
+Optionally, write the company you are representing, if any: Self 
 
 Check the appropriate boxes as they apply to you or the company you represent:  
 [ ] Interested in hearing about upcoming Debug Academy classes  
 [ ] Interested in hiring Drupal developers  
 [ ] Interested in discussing something else with Debug Academy  
-[ ] None of the above  
+[x] None of the above  
 
 You're not done quite yet - git did not save our changes to the history. Changes saved to the git history must be deliberate and explicit; git does not save every edit you do to the history automatically. Imagine how long the list would be if it did!  
 
