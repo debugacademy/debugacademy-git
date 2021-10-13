@@ -1,165 +1,156 @@
-# Intro to Command Line & Git  
+# Intro to Git  
 In this assignment, we will learn git by using it.  
 
 ## Answering questions  
-In this assignment, simply edit this homework file itself to answer the questions on it. You will be walked through everything during the assignment.  
+In this assignment, you will fork (and clone, if you haven't already) this repository (da-assignments), then edit this file itself (git.md) to answer the questions within the assignment. Below, we will walk you through the steps for obtaining the file. Your answers will be submitted as a pull request on github.   
 
-**You CAN use lessons provided by the class as well as google to answer the questions, but all answers must be in your own words**  
+### Global Git configuration -- Let Git know your name and email 
+- Open the command line (Windows: Git bash, Mac: Terminal)  
+    - *Important*: Windows users should *always* explicitly run Git bash as administrator.  
+- Run: `git --version` to confirm git is working 
+    - If you receive an error, git was not installed correctly  
+- After replacing `[YOUR NAME]` with your name, run: `git config --global user.name "[YOUR NAME]"`  
+- After replacing `[YOUR EMAIL]` with your public e-mail, run: `git config --global user.email "[YOUR EMAIL]"`  
+- Windows users only: Prevent windows from converting characters by running `git config --global core.autocrlf false` in your command line. 
 
-## Committing  
-Your commits should always be clear, concise explanations of what is being committed. They should be granular and easy to review.  
+### Git configuration for our development project
+- cd into your drupal folder  
+  - `cd ~/Desktop/debugacademy/drupal`  
+- After replacing `[YOUR NAME]` with your name, run: `git config user.name "[YOUR NAME]"`  
+- After replacing `[YOUR EMAIL]` with your e-mail, run: `git config user.email "[YOUR EMAIL]"`  
 
-## Tasks  
-Tasks are listed below.  
+### Assignments repository set up
+**If you have already cloned the da-assignments folder into debugacademy, skip this step.**
+- `cd` to the debugacademy folder:  
+    - `cd ~/Desktop/debugacademy`  
+- Clone the da-assignments repository that contains our assignments by running the following command in your command line:  
+    - `git clone https://github.com/debugacademy/da-assignments.git`  
 
-### Install Git  
-#### Mac OS X  
-- Open the command line  
-  - This is the program named "Terminal"  
-  - Unsure where to find it? Try Mac's spotlight search tool. Press:  
-    - `command` + `space`  
-    - Type: `Terminal`  
-    - Press the `Enter` key  
-- Run: ```git --version```  
-  - If it displays a version number, git is already installed. You can skip to "Initial Git Configuration".  
-  - If you receive an error or warning, git is not yet installed. Continue reading.  
+This will create a copy of the da-assignments repository on your computer, which will be placed where you ran the `git clone` command.  
 
-Downloading *Xcode* via the program on your computer named 'App store' is ideal, but it is *very* large download. If you have not already downloaded Xcode before class, try this git alternative: https://git-scm.com/download/mac  
+Outside of the command line, confirm that the da-assignments folder now exists at ~/Desktop/debugacademy/da-assignments .  
 
-#### Windows  
-Use Git for Windows ( ```https://git-for-windows.github.io/``` ) (command line).  
-
-#### Ubuntu  
-Use the command ```sudo apt-get install git-core``` to install Git using the command line.  
-
-Follow the installation options that will be presented to you.  
-
-### Github set up  
-- Log in to github.com  
-  - *You need to create an account on github.com first*  
-- Visit:  ```https://github.com/debugacademy/debugacademy-git```  
-- Press 'Fork' in the upper right corner of the page  
-- You have just created a copy of this repository on your github account!  
-
-### Local set up  
-- Open the command line (where git is installed)  
-- Run: ```git --version``` to confirm git is working  
-  - If you receive an error, git was not installed correctly  
-- ```cd``` to your Desktop  
-  - Done using: `cd ~/Desktop`  
-- Create a new folder named debugacademy within your Desktop:  
-  - `mkdir debugacademy`  
-- `cd` into that folder  
-  - `cd debugacademy`  
-    - There is more information on the ```cd``` command in this repository's README.md file.  
-- Clone the git repository you are reading by running the following command in your command line:  
-    - ```git clone https://github.com/debugacademy/debugacademy-git.git```  
-
-This will create a copy of this repository on your computer, in a folder named debugacademy-git, which will be placed in the folder debugacademy on your desktop, because that is where you ran the ```git clone``` command.  
-
-Wonderful! You now have cloned this repository twice. Once in your github.com account by clicking 'Fork', and once to your local computer using the git clone command. Let's proceed.  
+You have now cloned this repository twice. Once in your github.com account, and once to your local computer. Let's proceed.  
 
 ### Create and switch to a new branch  
-A branch is a version of your repository. By convention, we don't want to edit the 'master' branch, that version of your repository should continue to match that of Debug Academy's repository.  
+A branch is a version of your repository. Just like on a real gitflow-based project, we never want to edit the 'main' or 'develop' branches directly. Those versions of your repository should continue to match that of Debug Academy's repository for the entire project.  
 
-- Create a new branch based off of the master branch  
-  - ```git checkout -b [new-branch] [base-branch]```  
+- `cd` into the da-assignments folder
+- Ensure you have the latest branches downloaded:
+  - `git fetch --all`  
+- Create a new branch based off of the *develop* branch, which is our base branch using the gitflow workflow  
+  - `git checkout -b [new branch name] [base branch name]`  
 - Name the branch using the following common convention  
-  - `TOPIC-TASK_NUMBER-YOUR_INITIALS`  
+  - [Topic]-[Task Number]-[Your initials]  
 
 For example, Ashraf Abed would run the following command:  
-```git checkout -b git-01-aa master```  
+  -`git checkout -b git-003-aa origin/develop`  
 
 ### Confirm you are on your new branch  
-The ```git branch``` command lists all branches, and tells you what branch you are on by prefixing it with ```*```  
+The `git branch` command lists all branches, and tells you what branch you are on by denoting it with `*`  
 
-Simply run the ```git branch``` command and confirm you are where you expect to be.  
+Run the `git branch` command and confirm you are on the new branch you just created.  
 
 ### Make your first commit  
 Git is great for keeping the history of all edits on files. Let's try it out by editing the file you're reading right now!  
 
-Fill in your name after this colon: [right here]  
+Open this file from within your da-assignments folder using your preferred code-friendly text-editor, such as VSCode or Sublime Text.  
 
-Optionally, write the company you are representing, if any: [right here]  
+- Fill in your name after this colon:  
 
-Check the appropriate boxes as they apply to you or the company you represent:  
-[ ] Interested in hearing about upcoming Debug Academy classes  
-[ ] Interested in hiring Drupal developers  
-[ ] Interested in discussing something else with Debug Academy  
-[ ] None of the above  
+You're not done quite yet. Changes saved to the git history must be deliberate; git does not save every edit you do to the history automatically. Imagine how long the list would be if it did!  
 
-You're not done quite yet - git did not save our changes to the history. Changes saved to the git history must be deliberate and explicit; git does not save every edit you do to the history automatically. Imagine how long the list would be if it did!  
+"Stage" your edit so that it will be included in your next commit:  
+- Save this file  
+- In your command line window, cd into the da-assignments folder if you are not already there
+- Run `git status` to see what files were modified.
+- Run `git add [filename]` , after replacing `[filename]` with the name of this file    
+You just told git "The next time I commit something to history, I want the changes to `[filename]` to be included."  
 
-Tell git you want this edit included in the next commit using git add:  
-- ```git add git_assignment.md```    
-
-Now, create your first commit, saving the change to your repository's history!  
-- ```git commit -m '[my commit message]'```  
+Commit your edit!  
+- In your command line window, run `git commit -m '[my commit message]'`  , after replacing `[my commit message]` with a very short description of your changes.  
+- It's good practice to prefix the description with the assignment number, like: `003 - First commit in assignment 3`  
 
 ### Compare branches  
-You just switched from the master branch to your new branch, then made an edit and committed it to your new branch. Because branches are versions of the repository, we now have two different versions of the same repository! What does that mean?  
+You just switched from the develop branch to your new branch, then made an edit and committed it to your new branch. Because branches are versions of the repository, we now have multiple different versions of the same repository. What does that mean?  
 
-It means that you can simply jump between ( ```git checkout [branch]``` ) your master branch and your new branch, and all of the files in your repository will automatically be updated to the appropriate version!  
+It means that you can simply switch between ("checkout") your develop branch and your new branch, and all of the files in your da-assignments folder will automatically be updated to the appropriate version!  
 
 Let's try it out. You committed your name above, let's see if it really is only on your new branch.  
-- Look at this file and confirm your change really was made  
-- Switch to the master branch by running: ```git checkout master```  
-- Reload this file and look for the change you made  
+- Look at your file in your text editor. Confirm the change you made (entering your name) is there
+- In the command line, switch back to the develop branch. `git checkout develop`  
+- Reload the file and look for the change you made, if you are on your develop branch you should not see it  
 
-What happened to it?  
-
-### Merging work  
-We've edited this very file on one branch. What if a coworker edited the same file on their computer, and we want to combine our work?  
-
-In this example, our colleague has added a commit to another branch named git-02-aa and pushed (sent) it to the official Debug Academy repository. We are going to combine their branch with our branch.  
-
-- Download all branches from all repositories.  
-  - `git fetch --all`
-  - This downloads hidden copies of all branches from all associated remotes.  
-
-- The other branch is named `git-02-aa`, and it is stored on the remote nicknamed `origin`, by default.  
-
-- Switch to your question 1 branch you would like to be combined:  
-  - Run: `git checkout QUESTION_1_BRANCH_NAME`  
-- Merge (combine) the changes from origin's git-02-aa branch into your current branch:  
-  - Run: ```git merge origin/git-02-aa```  
-  - You should see a 'merge conflict' error message. Return to editing this file.  
-
-- Review this file - The edits you made to your branch and the edits were automatically combined!  
-  - Notice the `<<<`, `===`, and `>>>`  
-  - These are merge conflict indicators  
-  - They let you know what section of the file needs manually updated, if any  
-
-- You may remove the merge conflict indicators then save the file.  
-  - Then, git add and commit the merge:
-    - `git add git_assignment.md`  
-    - `git commit -m 'Merged branch git-02-aa'`   
+### Fork the da-assignments repository -- Allows submission of future homework assignments  
+**If you have previously forked the da-assignments repository, skip this section.**  
+- Log in to github.com  
+- Visit:  `https://github.com/debugacademy/da-assignments`  
+- Press 'Fork' in the upper right corner of the page (if you have not previously done so)  
+- You have just created a copy of this repository on your github account!  
+- Keep this window open for the next step!
 
 ### Communicating with remotes  
-You've made updates to your local, now you want to share them with teammates. This is where 'remotes' come in.  
+You've made updates to your local branch, now you want to share those updates with teammates. This is where 'remotes' come in.  
 
-Adding a remote is like adding an entry to your phone book. Instead of adding a name and phone number, you add a name and git URL. The concept and governing rules are essentially the same.  
+Adding a remote is like adding a contact to your phone book. Instead of adding a name and phone number, you add a name and git URL. The concept and governing rules are the same.  
 
-Go to your github account, and click on the debugacademy-git repository which you forked.  
-- Copy the ```HTTPS clone URL``` on the right of the page  
-- Run the command: ```git remote add me [copied URL]```  
-  - This command will add an entry in your 'phonebook', or list of remotes, with your github account's repository.  
-  - This command uses `me` as the account nickname. Just like contacts in a phonebook, you could use a different nickname.  
+- View the da-assignment repository on your github account (this is the page you were redirected to after 'fork'ing da-assignments in the previous task.)  
+  - Did you accidentally close that window? If so, do the following to get it back: Log in to github, visit the homepage, under 'Your repositories' click the da-assignments repository which you forked.  
+- Under the "Clone or Download" button, copy the `HTTPS clone URL`    
+- In the command line, cd into your local da-assignments folder: cd ~/Desktop/debugacademy/da-assignments
+- Run the command: `git remote add me [copied URL]`   
+  - Just like a contact in your phone, you can enter any name you want. I recommend simply using `me` as the nickname for your own account.
+- For example, Ali would run the following command: `git remote add me https://github.com/AliHassan7/da-assignments.git`  
+  - This command will add a contact in your 'phonebook', or list of remotes, with your github account's repository.  
+- Additionally, paste the URL of your remote to the #students room in slack. We will use this soon.  
 
-Run ```git remote -v``` to see a list of all entries your repository has in its 'phone book'. Confirm that your github repository is listed.  
+Run `git remote -v` to see a list of all entries your repository has in its 'phone book'. Confirm that your github repository is listed, in addition to the Debug Academy remote, named 'origin'.  
 
-### Push work to your repository  
-Let us now push one of the branches we have been working on to our Github accounts. After all, a primary point of git is to be able to collaborate.  
+### Push work to your github repository  
+A primary benefit of using git is being able to collaborate. Push the branch we have been working on to our Github accounts.  
 
-```git push me [question 1's branch name]```  
+`git push [your remote's nickname] [branch you would like to push]` 
+- For example, Ali would run the following command: `git push me git-003-ah`  
 
-Using the remote ('contact') entry from the previous task, git will send the specified branch to the remote which has the specified nickname in your contacts list.  
+Using the remote ('contact') entry you created in the previous task, Git will send the specified branch, `[branch you would like to push]`, to the specified remote, `[your remote's nickname]`, which you entered into your 'contact book' in the previous task.  
+
+### Add your instructor's remote contact info
+Next, add your instructor's github repository as a remote git connection so that we can communicate with it.  
+- Run the command: `git remote add ashraf https://github.com/ashabed/da-assignments.git`  
+  - You have added a "contact" to your phone book  
+  - The nickname for the contact is "ashraf"  
+  - That nickname now points to the instructor's github repository  
+
+Run `git remote -v` to confirm you have saved the remotes for debugacademy, your account, and the instructor's account.  
+
+### Merging work  
+We've edited this very file on our branch, and the instructor has edited it on their branch. What if we want to combine work from the two branches?  
+
+- Switch to the branch you completed this assignment on  
+  - `git checkout [my branch name]`  
+    - If you are unsure of your branch's name, run `git branch` to see a list of available branches  
+- Run `git fetch --all` to download work from all remotes  
+- Run `git branch -r` to view a list of the remote branches available to us  
+- Run `git merge ashraf/git-003-aa` to merge the work from your instructor's remote into your local branch.  
+- The edits you've made to your git.md file and the edits the instructor made to their git.md file should automatically be combined!  
+
+### Fix merge conflicts
+You and your classmate edited the same line in the same file, so there will be a conflict. Your terminal/gitbash will inform you of the conflict.  
+
+You can see the actual conflict by opening your git.md file in your text editor. Fix the merge conflict by cleaning up the text containing your and your instructor's names from question 1. You can do this however you like - with a comma, or rewrite it in another way. After this, commit your changes by repeating the following steps:  
+- Save this file  
+- In your terminal, run `git status` to see what files were modified.  
+- In your terminal, run `git add [filename]`    
+Next up, commit your edit!  
+- In your terminal, run `git commit -m '[my commit message]'`  
+- A sample commit message could be 'Git-003 - Merged Ashraf's git file'  
+- Push your work to your fork of the da-assignments repository on github by repeating the steps under the heading "Push work to your github repository"  
 
 ### Create a pull request  
-Now that you've pushed your work to your github repository, it's time to submit your work from your github repository to the main debugacademy repository.  
+Now that you've merged your edits to the git.md file (the file you are reading) along with the edits of your instructor, it's time to submit your work from your github repository to the main debugacademy repository.  
 
 Because you don't have permission to push your work to debugacademy's account, you must instead ask debugacademy to pull the work from your account. This is called creating a 'Pull Request', and it is a feature on github.com .  
 
 Once you've pushed your branch to your github repository, visit your github repository, and click 'Create Pull Request' or 'Pull Requests'.  
 
-Review the pull request you are about to create, and confirm its creation. The folks at debugacademy will receive a notification, review your pull request, and merge in the work you have submitted! This is how collaboration on software projects works.  
+The folks at debugacademy will receive a notification, review your pull request, and they can merge in the work you have submitted!   
