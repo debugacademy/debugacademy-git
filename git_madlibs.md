@@ -5,25 +5,25 @@ We will play a game similar to "Mad Libs" using Git. In this game, each player w
 
 ## Introduction  
 This is a story about how Sarah
- [enter an objective here].  
+ learned the kamehameha.  
 
 ## Initially  
 Initially, Sarah's hobby was to
- [enter an activity here].  
+ eat lots and fight dinosaurs.  
 
 ## Planning  
 But Sarah wanted a change. She considered
- [enter an activity here].  
+ caligraphy.  
 
 ## Action  
 Eventually, she decided to take the plunge. She
- [enter an action].  
+ found a turtle hermit to teach her.  
 
 ## Outcome  
 As a result, Sarah now
- [enter a hobby or occupation].  
+ fights alien gods of destruction.  
 
 ## Conclusion
 Sarah is
- [enter an emotion] 
+ unsatisfied 
  with all that she has accomplished.
