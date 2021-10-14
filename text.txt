@@ -1,3 +1,10 @@
 This is a text file which will be shared amongst multiple developers on our team.
 
 - Fill in your name after this colon:  
+
+Optionally, write the company you are representing, if any: [right here]  
+Check the appropriate boxes as they apply to you or the company you represent:  
+[ ] Interested in hearing about upcoming Debug Academy classes  
+[ ] Interested in hiring Drupal developers  
+[ ] Interested in discussing something else with Debug Academy  
+[ ] None of the above  
