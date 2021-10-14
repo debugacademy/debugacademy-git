@@ -1,10 +1,10 @@
 This is a text file which will be shared amongst multiple developers on our team.
 
-- Fill in your name after this colon:  
+- Fill in your name after this colon:  Kimberly
 
-Optionally, write the company you are representing, if any: [right here]  
+Optionally, write the company you are representing, if any: [US Courts]  
 Check the appropriate boxes as they apply to you or the company you represent:  
-[ ] Interested in hearing about upcoming Debug Academy classes  
+[x] Interested in hearing about upcoming Debug Academy classes  
 [ ] Interested in hiring Drupal developers  
-[ ] Interested in discussing something else with Debug Academy  
+[x] Interested in discussing something else with Debug Academy  
 [ ] None of the above  
