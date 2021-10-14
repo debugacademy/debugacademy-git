@@ -1,6 +1,6 @@
 This is a text file which will be shared amongst multiple developers on our team.
 
-- Fill in your name after this colon:  
+- Fill in your name after this colon:  Nazima
 
 Optionally, write the company you are representing, if any: [right here]  
 Check the appropriate boxes as they apply to you or the company you represent:  
